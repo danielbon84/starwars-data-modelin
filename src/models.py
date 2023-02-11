@@ -42,7 +42,7 @@ class Planetas(Base):
     poblacion =  Column(String(250), nullable=False)
     favoritos = relationship('Favoritos',backref='planetas', lazy=True)
 
- class Favoritos(Base):
+class Favoritos(Base):
     __tablename__ = 'favoritos'
     # Here we define columns for the table address.
     # Notice that each column is also a normal Python instance attribute.
